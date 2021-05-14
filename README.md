@@ -4,7 +4,7 @@ Dockerfile for building tflite-runtime from source using bazel
 ### Build tflite_runtime pip package
 * Setup build environment using the latest-devel as base docker container
 * Build tflite-runtime using `tensorflow/lite/tools/pip_package/build_pip_package_with_bazel.sh`
-* Run the following command to execute the steps above.
+* Run the following command to execute the build.
 ```
 make build
 ```
