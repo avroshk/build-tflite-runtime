@@ -30,5 +30,4 @@ ENV TF_SET_ANDROID_WORKSPACE=0
 WORKDIR /tensorflow_src
 RUN ./configure
 
-RUN CUSTOM_BAZEL_FLAGS=--define=tflite_pip_with_flex=true \
-  tensorflow/lite/tools/pip_package/build_pip_package_with_bazel.sh
+RUN tensorflow/lite/tools/pip_package/build_pip_package_with_bazel.sh
