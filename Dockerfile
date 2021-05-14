@@ -30,4 +30,5 @@ ENV TF_SET_ANDROID_WORKSPACE=0
 WORKDIR /tensorflow_src
 RUN ./configure
 
+COPY build_pip_package_with_bazel.sh tensorflow/lite/tools/pip_package/build_pip_package_with_bazel.sh
 RUN tensorflow/lite/tools/pip_package/build_pip_package_with_bazel.sh
