@@ -1,3 +1,6 @@
+# Steps to reproduce the error while building tflite-runtime pip package using bazel
+* Refer: https://github.com/tensorflow/tensorflow/issues/49198
+
 # build-tflite-runtime
 Dockerfile for building tflite-runtime from source using bazel
 
@@ -15,7 +18,7 @@ make build
 ```
 make run-test
 ```
-* Error encountered
+* Error encountered 
 ```
 tflite_runtime==2.6.0
 Traceback (most recent call last):
