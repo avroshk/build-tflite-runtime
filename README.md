@@ -1,5 +1,6 @@
 # Steps to reproduce the error while building tflite-runtime pip package using bazel
-* Refer: https://github.com/tensorflow/tensorflow/issues/49198
+* Refer: https://github.com/tensorflow/tensorflow/issues/49198 
+* Check https://github.com/avroshk/build-tflite-runtime/tree/fix branch for the fix
 
 # build-tflite-runtime
 Dockerfile for building tflite-runtime from source using bazel
