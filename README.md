@@ -1,3 +1,6 @@
+# Quick fix for error encountered while building tflite-runtime 
+* Refer PR: https://github.com/tensorflow/tensorflow/pull/49199
+
 # build-tflite-runtime
 Dockerfile for building tflite-runtime from source using bazel
 
@@ -15,13 +18,8 @@ make build
 ```
 make run-test
 ```
-* Error encountered
+* Output
 ```
 tflite_runtime==2.6.0
-Traceback (most recent call last):
-  File "test_interpreter.py", line 4, in <module>
-    import tflite_runtime.interpreter as tflite
-  File "/usr/local/lib/python3.6/dist-packages/tflite_runtime/interpreter.py", line 42, in <module>
-    from tflite_runtime import metrics_portable as metrics
-ImportError: cannot import name 'metrics_portable'
+~Great Success~
 ```
